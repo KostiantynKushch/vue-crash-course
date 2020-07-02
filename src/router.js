@@ -6,6 +6,7 @@ Vue.use(Router)
 
 export default new Router({
 	mode: 'history',
+	base: process.env.VUE_APP_MODE === 'production' ? '/' : '/vue-crash-course/',
 	routes: [
 		{
 			path: '/',
